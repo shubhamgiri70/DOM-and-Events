@@ -1,0 +1,15 @@
+h1 {
+  text-align: center;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4rem;
+}
+
+div {
+  height: 4rem;
+  width: 4rem;
+  border: 0.1rem solid black;
+}
