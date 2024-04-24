@@ -92,17 +92,22 @@ const colors = [
 let parentBox = document.querySelector(".buttons");
 let h1 = document.querySelector("h1");
 
-function handleClick(colorText) {
-  h1.innerText = colorText;
-  h1.style.backgroundColor = colorText;
+function handleClick(colorText, e) {
+  if (e.shiftKey === true) {
+    h1.innerText = colorText;
+    h1.style.backgroundColor = colorText;
+  } else {
+    h1.innerText = "Please press shift";
+  }
 }
 
 colors.forEach((color) => {
   let div = document.createElement("div");
   div.classList.add("box");
 
-  div.addEventListener("click", function () {
-    handleClick(color);
+  div.addEventListener("click", function (event) {
+    console.log(event);
+    handleClick(color, event);
   });
 
   div.style.backgroundColor = color;
