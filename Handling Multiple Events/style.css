@@ -1,0 +1,17 @@
+h1 {
+  width: 15rem;
+  padding-left: 3rem;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4rem;
+}
+
+.box {
+  height: 6rem;
+  width: 6rem;
+  margin: 0.5rem;
+  cursor: pointer;
+}
