@@ -9,7 +9,12 @@ section {
 }
 
 div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 4rem;
   width: 4rem;
   border: 0.1rem solid black;
+  font-size: 1rem;
+  color: black;
 }

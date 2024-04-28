@@ -27,3 +27,5 @@ function main() {
 
   counter.innerText = count;
 }
+
+main();
