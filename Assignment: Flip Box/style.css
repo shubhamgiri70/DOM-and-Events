@@ -44,3 +44,15 @@
   cursor: pointer;
   color: aliceblue;
 }
+
+.twobox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  height: 7rem;
+  width: 7rem;
+  background-color: rgb(66 66 66);
+  cursor: pointer;
+  color: aliceblue;
+}

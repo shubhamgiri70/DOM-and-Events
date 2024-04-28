@@ -1,12 +1,12 @@
-let parentBox = document.querySelector("section");
+let section = document.querySelector("section");
 
-for (let i = 0; i < 500; i++) {
-  let allBoxes = document.createElement("div");
+for (i = 0; i < 500; i++) {
+  let boxes = document.createElement("div");
 
-  parentBox.appendChild(allBoxes);
+  section.appendChild(boxes);
 }
-let boxes = document.querySelectorAll("div");
 
+let allBoxes = document.querySelectorAll("div");
 
 function randomColorGenerator() {
   let colorCharacters = [
@@ -29,8 +29,8 @@ function randomColorGenerator() {
   ];
   let color = "#";
   for (let i = 0; i < 6; i++) {
-    let randomNum = Math.floor(Math.random() * colorCharacters.length);
-    color += colorCharacters[randomNum];
+    let randomColorNum = Math.floor(Math.random() * colorCharacters.length);
+    color = color + colorCharacters[randomColorNum];
   }
   return color;
 }
@@ -40,20 +40,19 @@ function randomNumberGenerator() {
 }
 
 function handleColor() {
-  boxes.forEach((box) => {
+  allBoxes.forEach((box) => {
     let randomColor = randomColorGenerator();
     box.style.backgroundColor = randomColor;
   });
 }
 
-function handleNum() {
-  boxes.forEach((box) => {
-    let randomNumber = randomNumberGenerator();
-    box.innerText = randomNumber;
+function handleNumber() {
+  allBoxes.forEach((box) => {
+    box.innerText = randomNumberGenerator();
   });
 }
 
-boxes.forEach((box) => {
+allBoxes.forEach((box) => {
   box.addEventListener("mousemove", handleColor);
-  box.addEventListener("mousemove", handleNum);
+  box.addEventListener("mousemove", handleNumber);
 });

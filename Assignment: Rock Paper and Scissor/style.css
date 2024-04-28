@@ -1,0 +1,181 @@
+/* Box sizing */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Remove default margins and paddings */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+dd,
+figure,
+pre {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default spacing for paragraphs */
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+/* Remove default spacing for headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+/* Remove default spacing for lists */
+ul,
+ol,
+dl {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+/* Remove default styling for form elements */
+input,
+textarea,
+button,
+select {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+/* Remove default styling for anchor tags */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove default styling for images */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Remove default styling for tables */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* custom style */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.item-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  height: 70vh;
+}
+
+.parent-div {
+  width: 30%;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  margin-top: 5rem;
+  border-radius: 0.3rem;
+}
+
+h1 {
+  padding: 1rem;
+  background-color: #1d90ff;
+  border-radius: 0.3rem 0.3rem 0 0;
+  color: white;
+}
+
+button {
+  margin: 1rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: 0.1rem solid black;
+  border-radius: 0.4rem;
+}
+
+h2 {
+  margin: 1rem;
+}
+
+.fa-hand-rock-o:hover {
+  color: rgb(82, 81, 81);
+}
+
+.fa-hand-paper-o:hover {
+  color: rgb(82, 81, 81);
+}
+
+.fa-hand-scissors-o:hover {
+  color: rgb(82, 81, 81);
+}
+
+.computer-icons {
+  color: brown;
+}
+
+span {
+  font-size: 3rem;
+}
+
+i {
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.result {
+  padding: 2rem;
+  font-size: 3rem;
+}
