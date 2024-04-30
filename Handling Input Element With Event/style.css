@@ -1,0 +1,25 @@
+body {
+  background-color: antiquewhite;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 2rem;
+  width: 20rem;
+  text-align: center;
+  border: 0.1rem solid black;
+  margin: 0 auto;
+  background-color: white;
+}
+
+input {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+select {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
