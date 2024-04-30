@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Handling form with event</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <form class="container">
+        <input
+          type="text"
+          name="email"
+          id="text"
+          placeholder="Enter your email"
+        />
+        <select id="gender" name="gender">
+          <option value="male">male</option>
+          <option value="female">female</option>
+          <option value="other">other</option>
+        </select>
+        <div>
+          <input type="checkbox" name="terms" id="terms" />
+          <label for="terms">I agree with terms</label>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="data.js"></script>
+  </body>
+</html>

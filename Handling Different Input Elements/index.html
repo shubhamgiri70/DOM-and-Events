@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Handling Different Input Elements</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="relative">
+      <form class="container">
+        <div class="form-control">
+          <label for="name">Your Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+          />
+        </div>
+        <div class="form-control">
+          <label for="email">Your Email:</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="form-control">
+          <label for="movies">What do you love?</label>
+          <select name="gender" id="choice">
+            <option value="movies">movies</option>
+            <option value="series">series</option>
+            <option value="others">others</option>
+          </select>
+        </div>
+        <div class="form-control">
+          <label for="color">choose a color</label>
+          <input type="color" id="color" name="color" />
+        </div>
+        <div class="form-control">
+          <label for="range">Rate the movie inception out of 10</label>
+          <input type="range" id="range" name="movie" max="10" step="1" />
+        </div>
+        <div class="form-control">
+          <label>Book genre you love?</label>
+          <div>
+            <input
+              type="radio"
+              id="fiction"
+              name="book"
+              value="fiction"
+              checked
+            />
+            <label for="fiction">Fiction</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="non-fiction"
+              name="book"
+              value="non-fiction"
+            />
+            <label for="non-fiction">Non Fiction</label>
+          </div>
+          <div>
+            <input type="radio" id="adventure" name="book" value="adventure" />
+            <label for="adventure">Adventure</label>
+          </div>
+        </div>
+        <div>
+          <input type="checkbox" id="terms" name="terms" />
+          <label for="terms">I agree to the terms</label>
+        </div>
+        <button class="submit">Submit</button>
+      </form>
+      <div class="model_overlay">
+        <div class="container relative">
+          <button class="model_close">X</button>
+          <div class="model_info"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
