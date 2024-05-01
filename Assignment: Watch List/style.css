@@ -1,0 +1,42 @@
+body {
+  width: 100%;
+  background-color: darkcyan;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 500px;
+  height: 40vh;
+  margin: 5rem auto;
+  background-color: rgb(198, 132, 132);
+  text-align: center;
+}
+
+header {
+  background-color: rgb(245, 172, 145);
+}
+
+h1 {
+  padding: 1rem;
+}
+
+.input-box {
+  width: 80%;
+  height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.checkbox-control {
+  margin: 0.5rem;
+}
+
+.movie-name {
+  margin-left: 0.5rem;
+}
+
+span {
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 1rem;
+}
