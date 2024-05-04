@@ -1,0 +1,22 @@
+.box {
+  width: 30%;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 30px auto;
+  background-color: rgb(191, 189, 189);
+}
+.inputBox {
+  width: 90%;
+  padding: 7px 15px;
+}
+.todoListItem {
+  display: flex;
+  justify-content: space-between;
+}
+/* .flex {
+  display: flex;
+} */
+
+input[type="checkbox"]:checked + label.strikethrough {
+  text-decoration: line-through;
+}
