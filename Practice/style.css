@@ -1,0 +1,47 @@
+body {
+  width: 100%;
+  background-color: blueviolet;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.item-center {
+  align-items: center;
+}
+
+.container {
+  width: 500px;
+  text-align: center;
+  margin: 7rem auto;
+  background-color: aliceblue;
+}
+
+h1 {
+  padding: 1rem;
+}
+
+#text {
+  width: 90%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.checkbox {
+  margin-left: 1.4rem;
+  cursor: pointer;
+}
+
+span {
+  margin-right: 1.4rem;
+  cursor: pointer;
+}
