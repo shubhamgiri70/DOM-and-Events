@@ -1,11 +1,9 @@
 let display = document.querySelector(".display");
-let allButtons = document.querySelectorAll("button");
+let allBtn = document.querySelectorAll("button");
+
 let initialValue = 0;
-display.innerText = initialValue;
 
-let allButtonsArr = Array.from(allButtons);
-
-function handleBtnClick(event) {
+function handleClick(event) {
   if (event.target.classList.contains("equal")) {
     display.innerText = eval(display.innerText);
     return;
@@ -16,11 +14,15 @@ function handleBtnClick(event) {
   }
   if (display.innerText == initialValue) {
     display.innerText = event.target.innerText;
+    return;
   } else {
-    display.innerText += event.target.innerText;
+    display.innerText = display.innerText + event.target.innerText;
+    return;
   }
 }
 
-allButtonsArr.forEach((btn) => {
-  btn.addEventListener("click", handleBtnClick);
+allBtn.forEach((btn) => {
+  btn.addEventListener("click", handleClick);
 });
+
+display.innerText = initialValue;
