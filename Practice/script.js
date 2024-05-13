@@ -19,7 +19,7 @@
 // set attribute to the inputcheckbox button with name of data-id and value of index (get index from todo of foreach)
 // inside handlcheckbox function access id in a variable
 // todoArray[id].isDone = !todoArray[id].isDone ifter that call the createui function
-// wrap the whole code into a main function, and call the function so that no one can access the varaable or manupulate it 
+// wrap the whole code into a main function, and call the function so that no one can access the varaable or manupulate it
 
 function main() {
   let inputBox = document.getElementById("text");
@@ -83,7 +83,5 @@ function main() {
 
   inputBox.addEventListener("keyup", handleInput);
 }
-
-
 
 main();
